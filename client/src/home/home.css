@@ -1,0 +1,7 @@
+.noScroll {
+    overflow-y: hidden;
+}
+
+/* * {
+    touch-action: none !important;
+} */

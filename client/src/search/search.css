@@ -1,0 +1,91 @@
+/* Example Styles for React Tags*/
+#app {
+    padding: 40px;
+}
+
+.divlike {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Ripple-parent {
+    display: flex;
+    justify-content: center;
+}
+
+.btlike:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.box {
+    box-shadow:  5px 5px 5px black;
+    border-style: solid;
+    border-width: 1px;
+    padding: 20px;
+}
+
+div.tagsClass {
+    position: relative;
+}
+
+/* Styles for the input */
+.tagInputClass {
+    width: 200px;
+    border-radius: 2px;
+    display: inline-block;
+}
+.tagInputClass input.tagInputFieldClass,
+.tagInputClass input.tagInputFieldClass:focus {
+    height: 31px;
+    margin: 0;
+    font-size: 12px;
+    width: 100%;
+    border: 1px solid #eee;
+    padding: 0 4px;
+}
+
+/* Styles for selected tags */
+.tagClass {
+    border: 1px solid #ddd;
+    background: #eee;
+    font-size: 12px;
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px;
+    /* cursor: move; */
+    border-radius: 2px;
+}
+.removeClass {
+    color: #aaa;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/* Styles for suggestions */
+div.suggestionsClass {
+    position: absolute;
+    z-index: 10000;
+}
+div.suggestionsClass ul {
+    list-style-type: none;
+    box-shadow: .05em .01em .5em rgba(0,0,0,.2);
+    background: white;
+    width: 200px;
+}
+div.suggestionsClass li {
+    border-bottom: 1px solid #ddd;
+    padding: 5px 10px;
+    margin: 0;
+}
+div.suggestionsClass li mark {
+    text-decoration: underline;
+    background: none;
+    font-weight: 600;
+}
+div.suggestionsClass ul li.activeSuggestionClass {
+    background: #b7cfe0;
+    cursor: pointer;
+}

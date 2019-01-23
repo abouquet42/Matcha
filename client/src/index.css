@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  /* overflow-x: hidden */
+}
+
+.mainPage {
+  width: stretch;
+  /* height: stretch; */
+  padding-left: 64px;
+}
+
+.logOutNav {
+  position: absolute !important;
+  bottom: 0;
+  width: stretch;
+}
+
+.sidebar__page {
+  background-color: transparent !important;
+}
+
+.sidebar__menu {
+  overflow-y: auto !important;
+}
+
+.toggleNotif {
+  position: fixed;
+  z-index: 2;
+  background-color: transparent;
+  width: 72px;
+  right: 0;
+  top: 0;
+  height: 100%;
+  transition: 0.6s;
+}
+
+.toggleNotif.acti {
+  z-index: 2000;
+  background-color: slategrey;
+  width: 300px;
+  /* overflow: auto; */
+}
+
+.notif-Content {
+  opacity: 0;
+  height: 100%;
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: 0.4s;
+  white-space: nowrap;
+}
+
+.notif-Content.acti {
+  /* visibility: visible; */
+  opacity: 1;
+  /* z-index: 9; */
+  /* width: 100%; */
+}
+
+.notification {
+  white-space: nowrap;
+  cursor: pointer;
+  /* margin-bottom: 1rem; */
+  border-bottom: 2px solid whitesmoke;
+  text-align: left;
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: rgba(15, 15, 15, 0.623);
+}
+
+.close-notif {
+  width: 20px;
+  text-align: center;
+  position: absolute;
+  top: -41px;
+  right: -15px;
+}
+
+/* .notif-Content.acti {
+  background-color: lightskyblue;
+  width: 250px;
+} */
+
+.backDes {
+  /* display: none; */
+  visibility: hidden;
+  right: 0px;
+  transition: 0.8s;
+}
+
+.backDes.acti {
+  /* display: block; */
+  visibility: visible;
+  z-index: 1006;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 300px;
+  top: 0;
+  background-color: rgba(49, 49, 49, 0.445);
+}

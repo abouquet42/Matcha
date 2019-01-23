@@ -1,0 +1,82 @@
+.App {
+  padding-left: 64px;
+  text-align: center;
+  /* margin-bottom: 6rem; */
+}
+
+button, input {
+  outline: none !important;
+}
+
+body {
+  background-color: rgb(221, 218, 218) !important;
+}
+
+.turn {
+	animation: off-spin 0.5s linear;
+  color: red !important;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotateY(360deg);
+	}
+	to {
+		transform: rotateY(0deg);
+	}
+}
+
+.demo-wrapper * {
+  touch-action: none !important;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 3s linear;
+  height: 80px;
+  cursor: pointer;
+  color: rgb(33, 172, 236)
+}
+
+.App-header {
+  background-image: linear-gradient(to right, #db3d44, rgb(33, 172, 236));
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes off-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.log {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 33%;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  height: 150px;
+}
+
+.containerHeader {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.test2 {
+  flex-basis: auto;
+}
